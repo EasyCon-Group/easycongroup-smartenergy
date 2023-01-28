@@ -1,0 +1,3 @@
+package uz.easycongroup.smartenergy.data.datasource.rest.error.dispatcher
+
+internal interface HttpErrorDispatcherComponent
