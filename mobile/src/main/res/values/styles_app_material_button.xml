@@ -1,0 +1,76 @@
+<resources>
+
+    <style name="AppTheme.MaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:maxLines">2</item>
+
+        <item name="backgroundTint">@color/color_state_enabled_primary_and_jet_stream</item>
+
+        <item name="android:textColor">@color/color_state_enabled_white_and_grey</item>
+        <item name="android:textAppearance">@style/Text.OpenSans.Regular.16.PrimaryColor</item>
+        <item name="android:textAllCaps">false</item>
+
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="cornerRadius">6dp</item>
+    </style>
+
+    <style name="AppTheme.MaterialButton.Default">
+        <item name="android:maxLines">1</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="AppTheme.MaterialButton.Default.Transparent">
+        <item name="android:textColor">@color/color_state_enabled_primary_and_jet_stream</item>
+        <item name="backgroundTint">@color/color_state_enabled_primary_transparent_and_jet_stream</item>
+    </style>
+
+    <style name="AppTheme.MaterialButton.White">
+        <item name="android:textColor">@color/color_state_text_black_grey</item>
+        <item name="android:textAppearance">@style/Text.OpenSans.Regular.16.PrimaryColor</item>
+        <item name="backgroundTint">@color/color_state_enabled_white_and_jet_stream</item>
+    </style>
+
+    <style name="AppTheme.MaterialButton.Green">
+        <item name="android:textColor">@color/color_state_enabled_white_and_grey</item>
+        <item name="backgroundTint">@color/color_state_enabled_green_and_jet_stream</item>
+    </style>
+
+    <style name="AppTheme.MaterialButton.Grey">
+        <item name="backgroundTint">@color/color_button_background_gray</item>
+        <item name="android:textColor">@color/color_state_text_black_grey</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="AppTheme.MaterialOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/color_state_enabled_blue_and_grey</item>
+        <item name="android:textAppearance">@style/Text.OpenSans.Regular.16.PrimaryColor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="strokeColor">@color/color_state_enabled_blue_and_grey</item>
+    </style>
+
+    <style name="AppTheme.MaterialOutlinedButton.Default">
+        <item name="android:textColor">@color/color_state_enabled_blue_and_grey</item>
+    </style>
+
+    <style name="AppTheme.MaterialTextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_height">19dp</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:textAppearance">@style/Text.OpenSans.Medium.15</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="AppTheme.MaterialTextButton.Default">
+        <item name="android:textColor">@color/color_primary</item>
+    </style>
+
+</resources>

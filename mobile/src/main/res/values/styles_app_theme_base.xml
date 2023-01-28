@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+
+        <item name="android:textViewStyle">@style/AppTheme.TextView.Default</item>
+
+        <item name="materialButtonStyle">@style/AppTheme.MaterialButton.Default</item>
+        <item name="materialButtonOutlinedStyle">@style/AppTheme.MaterialOutlinedButton.Default</item>
+
+        <item name="materialCardViewStyle">@style/AppTheme.MaterialCardView.Default</item>
+        <item name="cardViewStyle">@style/AppTheme.CardView.Default</item>
+
+        <item name="recyclerViewStyle">@style/AppTheme.RecyclerView.Default</item>
+        <item name="android:scrollViewStyle">@style/AppTheme.ScrollView.Default</item>
+        <item name="nestedScrollViewStyle">@style/AppTheme.NestedScrollView.Default</item>
+
+        <item name="bottomSheetDialogTheme">@style/AppTheme.BottomSheetDialog.Default</item>
+
+<!--        <item name="android:popupTheme">@style/AppTheme.Toolbar.Default</item>-->
+<!--        <item name="popupTheme">@style/AppTheme.Toolbar.Default</item>-->
+<!--        <item name="toolbarStyle">@style/AppTheme.Toolbar.Default</item>-->
+
+<!--        <item name="android:actionMenuTextColor">@color/color_primary</item>-->
+<!--        <item name="actionMenuTextAppearance">@style/AppTheme.Toolbar.MenuTextStyle</item>-->
+<!--        <item name="actionMenuTextColor">@color/color_primary</item>-->
+    </style>
+
+</resources>

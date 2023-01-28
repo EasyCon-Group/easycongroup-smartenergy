@@ -1,0 +1,17 @@
+<resources>
+
+
+    <style name="AppTheme.BottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog" />
+
+    <style name="AppTheme.BottomSheetDialog.Default">
+        <item name="bottomSheetStyle">@style/AppTheme.BottomSheetDialogModal.Modal</item>
+    </style>
+
+
+    <style name="AppTheme.BottomSheetDialogModal" parent="Widget.Design.BottomSheet.Modal" />
+
+    <style name="AppTheme.BottomSheetDialogModal.Modal">
+        <item name="android:background">@drawable/shape_bottom_sheet_background</item>
+    </style>
+
+</resources>

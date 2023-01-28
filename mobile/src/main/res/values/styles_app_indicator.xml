@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="AppTheme.Indicator.RecyclerViewIndicator" parent="android:style/Widget.TextView">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="cii_dot_selected_icon">@drawable/ic_indicator_dot_selected</item>
+        <item name="cii_dot_not_selected_icon">@drawable/ic_indicator_dot_not_selected</item>
+        <item name="cii_dots_between_margin">6dp</item>
+        <item name="cii_dot_selected_width">14dp</item>
+        <item name="cii_dot_selected_height">8dp</item>
+        <item name="cii_dot_not_selected_width">8dp</item>
+        <item name="cii_dot_not_selected_height">8dp</item>
+        <item name="cii_gravity">center</item>
+        <item name="cii_orientation">horizontal</item>
+    </style>
+
+</resources>

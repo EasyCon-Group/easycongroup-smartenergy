@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/shape_shimmer_element_background" />
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/shape_shimmer_element_background" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/shape_shimmer_element_background" />
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/shape_shimmer_element_background" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="124dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_shimmer_element_background" />
+
+                <View
+                    android:layout_width="124dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/shape_shimmer_element_background" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="66dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_shimmer_element_background" />
+
+                <View
+                    android:layout_width="66dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/shape_shimmer_element_background" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</LinearLayout>

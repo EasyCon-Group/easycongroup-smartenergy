@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <style name="Text.OpenSans.Medium">
+        <item name="android:fontFamily">@font/open_sans_medium</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.10">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.10.PrimaryColorInverse">
+        <item name="android:textColor">@color/app_text_color_primary_inverse</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.12.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.12.SecondaryColor">
+        <item name="android:textColor">@color/app_text_color_secondary</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.13">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.13.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.13.SecondaryColor">
+        <item name="android:textColor">@color/app_text_color_secondary</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.14">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.14.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.14.PrimaryColorInverse">
+        <item name="android:textColor">@color/app_text_color_primary_inverse</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.14.SecondaryColor">
+        <item name="android:textColor">@color/app_text_color_secondary</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.15">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.17">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.17.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.18">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.18.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+
+    <style name="Text.OpenSans.Medium.21">
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.21.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+
+    <style name="Text.OpenSans.Medium.22">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Medium.22.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+
+</resources>

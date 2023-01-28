@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="button_height_small">39dp</dimen>
+
+    <dimen name="default_appbar_height">72dp</dimen>
+    <dimen name="main_bottom_navigation_height">56dp</dimen>
+
+    <dimen name="padding_bottom_default">86dp</dimen>
+
+</resources>

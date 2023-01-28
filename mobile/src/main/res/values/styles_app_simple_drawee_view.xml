@@ -1,0 +1,36 @@
+<resources>
+
+    <style name="AppTheme.SimpleDraweeView">
+        <item name="android:background">@drawable/shape_image_rectangle</item>
+        <item name="actualImageScaleType">centerCrop</item>
+        <item name="placeholderImageScaleType">centerInside</item>
+        <item name="progressBarAutoRotateInterval">1000</item>
+        <item name="progressBarImage">@drawable/loading_default_medium</item>
+        <item name="progressBarImageScaleType">centerInside</item>
+    </style>
+
+    <style name="AppTheme.SimpleDraweeView.Default">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="actualImageScaleType">fitCenter</item>
+    </style>
+
+    <style name="AppTheme.SimpleDraweeView.Rounded">
+        <item name="android:background">@drawable/shape_image_rounded</item>
+        <item name="roundTopLeft">true</item>
+        <item name="roundTopRight">true</item>
+        <item name="roundBottomLeft">true</item>
+        <item name="roundBottomRight">true</item>
+        <item name="roundedCornerRadius">6dp</item>
+    </style>
+
+    <style name="AppTheme.SimpleDraweeView.TopRounded">
+        <item name="android:background">@drawable/shape_image_top_rounded</item>
+        <item name="actualImageScaleType">centerCrop</item>
+        <item name="roundBottomLeft">false</item>
+        <item name="roundBottomRight">false</item>
+        <item name="roundTopLeft">true</item>
+        <item name="roundTopRight">true</item>
+        <item name="roundedCornerRadius">6dp</item>
+    </style>
+
+</resources>

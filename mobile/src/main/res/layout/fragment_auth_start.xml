@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_primary"
+    android:theme="@style/AppTheme.NoActionBar">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarLayout.Default"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:popupTheme="@style/AppTheme.Toolbar.Default"
+            app:title=""
+            app:titleCentered="true"
+            app:titleTextAppearance="@style/Text.OpenSans.Bold" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_auth_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Tizimga kirish"
+        android:textAppearance="@style/Text.OpenSans.Bold.25.PrimaryColor"
+        app:layout_constraintTop_toBottomOf="@+id/appbar_layout" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_select_auth_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Foydalanuvchini tanlang"
+        android:textAppearance="@style/Text.OpenSans.Regular.15.SecondaryColor"
+        app:layout_constraintTop_toBottomOf="@+id/tv_auth_login" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_users"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:paddingVertical="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_select_auth_type"
+        tools:itemCount="3"
+        tools:listitem="@layout/view_holder_user" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

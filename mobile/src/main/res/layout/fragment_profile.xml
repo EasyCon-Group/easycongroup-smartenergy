@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_primary"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarLayout.Default"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:popupTheme="@style/AppTheme.Toolbar.Default"
+            app:title="@string/main_bottom_profile"
+            app:titleCentered="true"
+            app:titleTextAppearance="@style/Text.OpenSans.Bold" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_color"
+        app:layout_constraintTop_toBottomOf="@id/appbar_layout" />
+
+    <ScrollView
+        android:id="@+id/rv_profile_items"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color_background_f5f5f5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_personal_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/color_background_primary"
+                android:drawableStart="@drawable/ic_profile_personal_data"
+                android:drawableEnd="@drawable/ic_profile_next"
+                android:drawablePadding="16dp"
+                android:foreground="?selectableItemBackground"
+                android:padding="16dp"
+                android:text="@string/profile_personal_data"
+                android:textAppearance="@style/Text.OpenSans.Regular.12.PrimaryColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider_color" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/color_background_primary"
+                android:drawableStart="@drawable/ic_profile_notification"
+                android:drawableEnd="@drawable/ic_profile_next"
+                android:drawablePadding="16dp"
+                android:foreground="?selectableItemBackground"
+                android:padding="16dp"
+                android:text="@string/profile_notifications"
+                android:textAppearance="@style/Text.OpenSans.Regular.12.PrimaryColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider_color" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_payment_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/color_background_primary"
+                android:drawableStart="@drawable/ic_profile_payment_history"
+                android:drawableEnd="@drawable/ic_profile_next"
+                android:drawablePadding="16dp"
+                android:foreground="?selectableItemBackground"
+                android:padding="16dp"
+                android:text="@string/profile_invoices"
+                android:textAppearance="@style/Text.OpenSans.Regular.12.PrimaryColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider_color" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/color_background_primary"
+                android:drawableStart="@drawable/ic_profile_cards"
+                android:drawableEnd="@drawable/ic_profile_next"
+                android:drawablePadding="16dp"
+                android:foreground="?selectableItemBackground"
+                android:padding="16dp"
+                android:text="@string/profile_cards"
+                android:textAppearance="@style/Text.OpenSans.Regular.12.PrimaryColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider_color" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_saved_devices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/color_background_primary"
+                android:drawableStart="@drawable/ic_profile_devices"
+                android:drawableEnd="@drawable/ic_profile_next"
+                android:drawablePadding="16dp"
+                android:foreground="?selectableItemBackground"
+                android:padding="16dp"
+                android:text="@string/profile_trusted_devices"
+                android:textAppearance="@style/Text.OpenSans.Regular.12.PrimaryColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider_color" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/color_background_primary"
+                android:drawableStart="@drawable/ic_profile_logout"
+                android:drawableEnd="@drawable/ic_profile_nothing"
+                android:drawablePadding="16dp"
+                android:foreground="?selectableItemBackground"
+                android:padding="16dp"
+                android:text="@string/profile_logout"
+                android:textAppearance="@style/Text.OpenSans.Regular.12.PrimaryColor"
+                android:textColor="#FB577C" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider_color" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

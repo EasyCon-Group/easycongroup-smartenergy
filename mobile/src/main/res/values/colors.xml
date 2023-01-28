@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#095AE3</color>
+    <color name="color_primary_dark">#095AE3</color>
+    <color name="color_accent">#095AE3</color>
+<!--    <color name="color_accent">#8539B2</color>-->
+
+    <!-- main colors -->
+    <color name="white">#FFFFFF</color>
+
+    <!-- common colors -->
+    <color name="color_toolbar_background">#FFFFFF</color>
+    <color name="color_status_bar_background">#FFFFFF</color>
+    <color name="color_background_primary">#FFFFFF</color>
+    <color name="color_background_fefefe">#FEFEFE</color>
+    <color name="color_background_f5f5f5">#F5F5F5</color>
+    <color name="color_input_background_primary">#EFF1F4</color>
+    <color name="color_input_background_light">#F9F9F9</color>
+    <color name="color_input_stroke_primary">#8539B2</color>
+    <color name="color_input_stroke_light">#E8EAEE</color>
+    <color name="color_image_background">#F4F5F8</color>
+    <color name="color_button_background_white">#FFFFFF</color>
+    <color name="color_button_background_gray">#F4F5F8</color>
+    <color name="color_icon_primary">@color/slate_blue</color>
+    <color name="color_icon_black">#010101</color>
+    <color name="color_progressbar_color">#2E3E4E</color>
+    <color name="color_progressbar_color_dialog">#FFFFFF</color>
+    <color name="color_divider_color">#E8EAEE</color>
+    <color name="color_error">#CC2A30</color>
+    <color name="color_rating_star_color">#FFAF2B</color>
+    <color name="color_recycler_item_bc">#F4F5F8</color>
+    <color name="color_product_background">#FFFFFF</color>
+    <color name="color_product_stroke">#E8EAEE</color>
+    <color name="color_shimmer_element">#DDDCDC</color>
+    <color name="color_plus_minus_button">#E8EAEE</color>
+    <color name="color_viewed_count">#F4F5F8</color>
+
+    <!-- text colors -->
+    <color name="app_text_color_primary">#010101</color>
+    <color name="app_text_color_secondary">#7B7D81</color>
+    <color name="app_text_color_tertiary">#DADADA</color>
+    <color name="app_text_color_primary_inverse">#FFFFFF</color>
+    <color name="app_text_color_error">#BA3838</color>
+
+    <color name="color_button_background_primary">#5C6AC4</color>
+    <color name="color_button_background_primary_transparent">#1F095AE3</color>
+
+    <color name="color_red">#EB2F69</color>
+
+    <color name="color_stateless_button_background_blue">@color/color_primary</color>
+    <color name="color_stateless_button_background_red">@color/color_red</color>
+    <color name="color_stateless_button_background_white">@color/white</color>
+
+    <color name="slate_blue">#5C6AC4</color>
+    <color name="royal_orange">#FC8E3C</color>
+
+    <color name="dark_lemon_lime">#86C321</color>
+
+    <color name="colorGray">#575756</color>
+    <color name="colorDivider">#eae8e8</color>
+
+    <color name="color_jet_stream">#B7CCC0</color>
+
+    <color name="colorGrey">#838383</color>
+    <color name="davy_s_grey">#838383</color>
+
+</resources>

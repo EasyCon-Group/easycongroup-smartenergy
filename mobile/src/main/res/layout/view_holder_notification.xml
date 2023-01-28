@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background_primary"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="16dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_notification_state"
+        style="@style/AppTheme.SimpleDraweeView.Rounded"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:padding="8dp"
+        app:actualImageScaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_notification_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:gravity="start"
+        android:textAppearance="@style/Text.OpenSans.Regular.14.PrimaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sdv_notification_state"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Sizning buyurtma raqamingiz №1013628 qabul qilindi.Sotuvchi tomonidan javob kelishini kuting!" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_notification_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center|start"
+        android:textAppearance="@style/Text.OpenSans.Regular.14.SecondaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sdv_notification_state"
+        app:layout_constraintTop_toBottomOf="@id/tv_notification_message"
+        tools:text="22.12.2022" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

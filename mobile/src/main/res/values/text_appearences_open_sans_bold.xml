@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <style name="Text.OpenSans.Bold">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.OpenSans.Bold.15">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Bold.15.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+
+    <style name="Text.OpenSans.Bold.16">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Bold.16.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+    <style name="Text.OpenSans.Bold.17">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Bold.17.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+    <style name="Text.OpenSans.Bold.18">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Bold.18.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+    <style name="Text.OpenSans.Bold.20">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Bold.20.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+
+    <style name="Text.OpenSans.Bold.25">
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="Text.OpenSans.Bold.25.PrimaryColor">
+        <item name="android:textColor">@color/app_text_color_primary</item>
+    </style>
+
+
+</resources>

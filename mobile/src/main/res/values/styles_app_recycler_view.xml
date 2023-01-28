@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="AppTheme.RecyclerView">
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <style name="AppTheme.RecyclerView.Default">
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+</resources>

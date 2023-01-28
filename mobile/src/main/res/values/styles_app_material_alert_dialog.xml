@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog" />
+
+
+    <!--MaterialAlertDialog rounded dialog-->
+
+    <style name="AppTheme.MaterialAlertDialog.Rounded">
+        <item name="alertDialogStyle">@style/AppTheme.MaterialAlertDialog.Rounded.Params</item>
+    </style>
+
+    <style name="AppTheme.MaterialAlertDialog.Rounded.Params" parent="MaterialAlertDialog.MaterialComponents" >
+        <item name="shapeAppearance">@style/AppTheme.MaterialAlertDialog.Rounded.MediumShape</item>
+    </style>
+
+    <style name="AppTheme.MaterialAlertDialog.Rounded.MediumShape" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>

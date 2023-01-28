@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Energy</string>
+
+    <string name="message_bad_request_error">So‘rovni bajarishda xatolik yuz berdi</string>
+    <string name="message_connection_error">Iltimos, internetingizni tekshiring, serverga ulanib bo‘lmadi</string>
+    <string name="message_forbidden_error">So‘rovni bajarib bo‘lmadi. Iltimos keyinroq qayta urinib ko‘ring</string>
+    <string name="message_internal_server_error">Serverga ulanishda xatolik yuz berdi. Internetingizni tekshiring va qaytadan urining</string>
+    <string name="message_response_error">Xatolik ro‘y berdi. Iltimos, yana bir bor urinib ko‘ring</string>
+    <string name="message_unauthorized_error">Xatolik ro‘y berdi. Iltimos, yana bir bor urinib ko‘ring</string>
+    <string name="message_unknown_error">Xatolik ro‘y berdi. Iltimos, yana bir bor urinib ko‘ring</string>
+
+    <string name="message_title_error">Xato</string>
+    <string name="message_title_warning">Ogohlantirish</string>
+    <string name="message_title_info">Xabar</string>
+
+    <!-- state labels -->
+    <string name="state_loading">Yuklanmoqda…</string>
+    <string name="state_no_items">Xech nima topilmadi</string>
+    <string name="state_error_title">Xatolik yuz berdi :(</string>
+    <string name="state_error_action">Takrorlash</string>
+
+    <!-- common labels -->
+    <string name="reset">Tashlash</string>
+    <string name="ready">Tayyor</string>
+    <string name="skip">Tashlab ketish</string>
+    <string name="save">Saqlash</string>
+    <string name="stay">Qolish</string>
+    <string name="cancel">Bekor</string>
+    <string name="close">Yopish</string>
+    <string name="confirm">Tasdiqlash</string>
+
+    <!-- permission -->
+    <string name="open_settings">Ilova sozlamalarini ochish</string>
+    <string name="grant_permission">Ruxsat berish</string>
+    
+    <!-- dashboard screen locales -->
+    <string name="main_bottom_report">Xisobot</string>
+    <string name="main_bottom_home">Asosiy</string>
+    <string name="main_bottom_profile">Profil</string>
+
+    <!-- payment history screen -->
+    <string name="payment_history_empty">Hozircha to’lovni amalga oshirmadingiz</string>
+
+    <!-- sort type selection screen locales   -->
+    <string name="sort_type_title">Saralash</string>
+    <string name="sort_type_by_popularity">Ommaviyligi bo’yicha</string>
+    <string name="sort_type_by_price">Narxi bo’yicha</string>
+    <string name="sort_type_by_rating">Reytinggi bo’yicha</string>
+    <string name="sort_type_by_feedback">Mulohazalar bo’yicha</string>
+    <string name="sort_type_by_discount">Chegirma bo’yicha</string>
+    <string name="sort_type_by_new">Sanasi bo’yicha</string>
+
+    <!-- notification list screen -->
+    <string name="notification_list_title">Bildirishnomalar</string>
+    <string name="notification_list_empty_message">Sizda bildirishnoma yo’q hozircha</string>
+
+    <!-- date picker screen locales -->
+    <string name="date_picker_title">Sanani tanlang</string>
+
+
+    <!-- notification -->
+    <string name="notification_permission_denied_title">Требуется предоставление разрешения для показа уведомления</string>
+
+    <!-- payment history -->
+    <string name="payment_history_transactions_title">Mening to’lovlarim</string>
+
+
+    <!-- profile screen -->
+    <string name="profile_cards">Ulangan kartalar</string>
+    <string name="profile_invoices">To’lovlar tarixi</string>
+    <string name="profile_logout">Tizimdan chiqish</string>
+    <string name="profile_notifications">Bildirishnomalar</string>
+    <string name="profile_personal_data">Shaxsiy ma’lumotlar</string>
+    <string name="profile_trusted_devices">Ishonilgan qurilmalar</string>
+
+    <string name="user_role_manager">Rahbar</string>
+    <string name="user_role_supervisor">Nazoratchi</string>
+    <string name="user_role_citizen">Xonadon sohibi</string>
+
+</resources>

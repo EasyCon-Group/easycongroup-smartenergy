@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:paddingTop="19dp"
+    android:paddingBottom="19dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="center"
+        android:text="@string/sort_type_title"
+        android:textAppearance="@style/Text.OpenSans.Bold.20.PrimaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_reset"
+        style="@style/AppTheme.MaterialTextButton.Default"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="@string/reset"
+        android:textAppearance="@style/Text.OpenSans.Regular.14"
+        android:textColor="@color/color_accent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_close"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_bottom_sheet_close" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_items"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:paddingBottom="@dimen/padding_bottom_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:itemCount="4"
+        tools:listitem="@layout/view_holder_sort_type" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        style="@style/AppTheme.MaterialButton.Default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

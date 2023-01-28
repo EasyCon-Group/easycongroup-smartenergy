@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_home"
+        android:icon="@drawable/ic_bottom_home"
+        android:orderInCategory="101"
+        android:title="@string/main_bottom_home" />
+
+    <item
+        android:id="@+id/main_catalog"
+        android:icon="@drawable/ic_bottom_categories"
+        android:orderInCategory="102"
+        android:title="@string/main_bottom_report" />
+
+    <item
+        android:id="@+id/main_profile"
+        android:icon="@drawable/ic_bottom_profile"
+        android:orderInCategory="105"
+        android:title="@string/main_bottom_profile" />
+
+</menu>

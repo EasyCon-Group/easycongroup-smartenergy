@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="AppTheme.ScrollView">
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <style name="AppTheme.ScrollView.Default">
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="AppTheme.NestedScrollView">
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <style name="AppTheme.NestedScrollView.Default">
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+</resources>

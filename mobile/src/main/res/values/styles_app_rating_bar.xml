@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="AppTheme.RatingBar.Small" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:progressTint">@color/color_rating_star_color</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">0.5</item>
+    </style>
+
+</resources>
