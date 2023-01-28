@@ -4,7 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-internal data class BaseResponse<T>(
+internal data class RootResponse<T>(
 
     @SerialName("error")
     val error: String? = null,
