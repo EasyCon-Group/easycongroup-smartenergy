@@ -1,0 +1,164 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlinx-serialization'
+apply plugin: 'kotlin-parcelize'
+
+android {
+    compileSdkVersion 33
+    ndkVersion "21.3.6528147"
+
+    defaultConfig {
+        applicationId "uz.easycongroup.smartenergy"
+
+        minSdkVersion 23
+        targetSdkVersion 33
+
+        versionCode 1000
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [
+                        disableEmptyStrategyCheck: 'true',
+                        enableEmptyStrategyHelper: 'true',
+                        defaultMoxyStrategy      : 'moxy.viewstate.strategy.AddToEndSingleStrategy'
+                ]
+            }
+        }
+
+        buildConfigField "long", "BUILD_DATE", System.currentTimeMillis() + "L"
+        archivesBaseName = "v${versionName}(${versionCode})-${applicationId}"
+    }
+
+    productFlavors {
+        flavorDimensions "mode"
+
+        prod {
+            dimension "mode"
+            buildConfigField "String", "BASE_URL", "\"https://api.smart-energy.uz/api/\""
+            buildConfigField "String", "BASIC_PASSWORD", "\"Qwe123\""
+
+            buildConfigField "boolean", "LOG_ENABLED", "true"
+        }
+
+        mock {
+            dimension "mode"
+            buildConfigField "String", "BASE_URL", "\"https://api.smart-energy.uz/api/\""
+            buildConfigField "String", "BASIC_PASSWORD", "\"Qwe123\""
+
+            buildConfigField "boolean", "LOG_ENABLED", "true"
+        }
+
+    }
+
+    signingConfigs {
+        release {
+        }
+    }
+
+    buildTypes {
+        debug { }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions { jvmTarget = "1.8" }
+    buildFeatures { viewBinding = true }
+}
+
+dependencies {
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test.ext:junit:1.1.4"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.0"
+    androidTestImplementation "androidx.test:runner:1.5.1"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "androidx.appcompat:appcompat:1.4.1"
+    implementation "androidx.core:core-ktx:1.9.0-alpha02"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.0"
+
+    implementation "com.google.android.material:material:1.4.0"
+
+//    implementation "androidx.work:work-runtime-ktx:2.0.0"
+
+    implementation "androidx.room:room-runtime:2.3.0"
+    implementation "androidx.room:room-ktx:2.3.0"
+    kapt "androidx.room:room-compiler:2.3.0"
+
+    implementation "com.google.dagger:dagger:2.41"
+    kapt "com.google.dagger:dagger-compiler:2.41"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.1.0"
+
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
+
+    implementation 'com.facebook.fresco:fresco:2.4.0'
+
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.3"
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-experimental-adapter:1.0.0"
+    implementation "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0"
+
+    // chucker logger
+    debugImplementation "com.github.chuckerteam.chucker:library:3.5.2"
+    releaseImplementation "com.github.chuckerteam.chucker:library-no-op:3.4.0"
+
+    implementation "com.github.moxy-community:moxy:2.2.2"
+    implementation "com.github.moxy-community:moxy-androidx:2.2.2"
+    implementation "com.github.moxy-community:moxy-ktx:2.2.2"
+    implementation "com.github.moxy-community:moxy-material:2.2.2"
+    kapt "com.github.moxy-community:moxy-compiler:2.2.2"
+
+    implementation 'me.relex:circleindicator:2.1.4@aar'
+
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
+
+    implementation "com.chaos.view:pinview:1.4.4"
+
+    api "com.intuit.sdp:sdp-android:1.0.6"
+
+    //state layout
+//    implementation 'com.github.erkutaras:StateLayout:1.5.0'
+
+    // easy recyclerview adapter
+    implementation "ru.surfstudio.android:easyadapter:7.0.1"
+    implementation "ru.surfstudio.android:easyadapter-pagination:7.0.1"
+    implementation "ru.surfstudio.android:recycler-decorator:1.0.1"
+    implementation "ru.surfstudio.android:recycler-decorator-easyadapter:1.0.1"
+    implementation "ru.surfstudio.android:datalist-page-count:0.5.0"
+    implementation "ru.surfstudio.android:datalist-base:0.5.0"
+
+    // navigation
+    implementation "ru.terrakok.cicerone:cicerone:5.1.0"
+
+    //view binding delegate
+    implementation 'com.github.kirich1409:viewbindingpropertydelegate:1.5.3'
+
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+
+    implementation "ru.tinkoff.decoro:decoro:1.5.0"
+
+    // pager dot indicator
+    implementation "ru.tinkoff.scrollingpagerindicator:scrollingpagerindicator:1.2.3"
+
+    // http logger notifications
+    debugImplementation "com.github.chuckerteam.chucker:library:3.5.2"
+    releaseImplementation "com.github.chuckerteam.chucker:library-no-op:3.4.0"
+
+    // logger
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    implementation "com.github.skydoves:androidveil:1.1.1"
+    implementation "com.facebook.shimmer:shimmer:0.5.0"
+}
