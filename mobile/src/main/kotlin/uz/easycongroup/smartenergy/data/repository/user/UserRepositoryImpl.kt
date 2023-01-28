@@ -12,6 +12,7 @@ import uz.easycongroup.smartenergy.data.datasource.rest.service.ProfileRestServi
 import uz.easycongroup.smartenergy.data.mapper.userEntityToUser
 import uz.easycongroup.smartenergy.data.mapper.userResponseToUser
 import uz.easycongroup.smartenergy.data.mapper.userToUserEntity
+import uz.easycongroup.smartenergy.data.models.user.role.UserRole
 import uz.easycongroup.smartenergy.domain.data.models.user.User
 import uz.easycongroup.smartenergy.domain.data.repository.user.UserRepository
 import javax.inject.Inject
@@ -26,11 +27,11 @@ internal class UserRepositoryImpl @Inject constructor(
 
     override fun getUserList(): Flow<List<User>> {
         return authRestService.getUserList()
-//            .onEach { response ->
-//                userEntityDao.deleteAllUsers()
-//                userEntityDao.insert(response.data.users.map { it.userResponseToUserEntity() })
-//            }
             .map { response -> response.data.users.map { it.userResponseToUser() } }
+    }
+
+    override fun getSavedUserRole(): UserRole {
+        return userPreference.userRole
     }
 
     override fun saveUser(user: User): Flow<Unit> {

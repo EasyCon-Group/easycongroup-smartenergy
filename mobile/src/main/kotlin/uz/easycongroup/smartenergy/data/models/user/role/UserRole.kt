@@ -5,6 +5,15 @@ enum class UserRole {
     SUPERVISOR,
     CITIZEN;
 
+    val isManager: Boolean
+        get() = this == MANAGER
+
+    val isSupervisor: Boolean
+        get() = this == SUPERVISOR
+
+    val isCitizen: Boolean
+        get() = this == CITIZEN
+
     companion object {
 
         val DEFAULT: UserRole = CITIZEN

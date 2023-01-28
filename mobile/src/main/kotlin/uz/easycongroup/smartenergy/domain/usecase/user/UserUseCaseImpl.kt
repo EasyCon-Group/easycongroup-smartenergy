@@ -3,6 +3,7 @@ package uz.easycongroup.smartenergy.domain.usecase.user
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOn
+import uz.easycongroup.smartenergy.data.models.user.role.UserRole
 import uz.easycongroup.smartenergy.domain.data.models.user.User
 import uz.easycongroup.smartenergy.domain.data.repository.user.UserRepository
 import javax.inject.Inject
@@ -19,6 +20,10 @@ class UserUseCaseImpl @Inject constructor(
     override fun saveSelectedUser(user: User): Flow<Unit> {
         return userRepository.saveUser(user)
             .flowOn(Dispatchers.IO)
+    }
+
+    override fun getSavedUserRole(): UserRole {
+        return userRepository.getSavedUserRole()
     }
 
     override fun getSavedUser(): Flow<User> {
