@@ -25,9 +25,9 @@ class HomePresenter @Inject constructor(
     private fun setViewVisibility(){
         val userRole = userUseCase.getSavedUserRole()
         viewState.onDefinedViewVisibility(
-            isManagerViewsVisible = userRole.isManager,
+            isManagerViewsVisible = false,
             isSupervisorViewsVisible = true, // userRole.isSupervisor, fixme
-            isCitizenViewsVisible = userRole.isCitizen
+            isCitizenViewsVisible = false
         )
     }
 

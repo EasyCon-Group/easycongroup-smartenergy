@@ -132,9 +132,6 @@ dependencies {
 
     api "com.intuit.sdp:sdp-android:1.0.6"
 
-    //state layout
-//    implementation 'com.github.erkutaras:StateLayout:1.5.0'
-
     // easy recyclerview adapter
     implementation "ru.surfstudio.android:easyadapter:7.0.1"
     implementation "ru.surfstudio.android:easyadapter-pagination:7.0.1"
@@ -149,12 +146,10 @@ dependencies {
     //view binding delegate
     implementation 'com.github.kirich1409:viewbindingpropertydelegate:1.5.3'
 
-    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    // chart library
+    implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
 
     implementation "ru.tinkoff.decoro:decoro:1.5.0"
-
-    // pager dot indicator
-    implementation "ru.tinkoff.scrollingpagerindicator:scrollingpagerindicator:1.2.3"
 
     // http logger notifications
     debugImplementation "com.github.chuckerteam.chucker:library:3.5.2"
