@@ -29,10 +29,7 @@
     <color name="color_error">#CC2A30</color>
     <color name="color_rating_star_color">#FFAF2B</color>
     <color name="color_recycler_item_bc">#F4F5F8</color>
-    <color name="color_product_background">#FFFFFF</color>
-    <color name="color_product_stroke">#E8EAEE</color>
     <color name="color_shimmer_element">#DDDCDC</color>
-    <color name="color_viewed_count">#F4F5F8</color>
 
     <!-- text colors -->
     <color name="app_text_color_primary">#010101</color>
@@ -51,12 +48,11 @@
     <color name="color_stateless_button_background_white">@color/white</color>
 
     <color name="slate_blue">#5C6AC4</color>
-    <color name="royal_orange">#FC8E3C</color>
 
     <color name="dark_lemon_lime">#86C321</color>
 
     <color name="colorGray">#575756</color>
-    <color name="colorDivider">#eae8e8</color>
+
 
     <color name="color_jet_stream">#B7CCC0</color>
 

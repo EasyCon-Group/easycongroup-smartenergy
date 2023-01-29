@@ -12,7 +12,6 @@
 
     <string name="message_title_error">Xato</string>
     <string name="message_title_warning">Ogohlantirish</string>
-    <string name="message_title_info">Xabar</string>
 
     <!-- state labels -->
     <string name="state_loading">Yuklanmoqda…</string>
