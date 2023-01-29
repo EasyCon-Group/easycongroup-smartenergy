@@ -2,7 +2,6 @@ package uz.easycongroup.smartenergy.presentation.presentation.features.main.feat
 
 import android.os.Bundle
 import android.view.View
-import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.anychart.AnyChart
 import com.anychart.chart.common.dataentry.DataEntry
@@ -59,11 +58,7 @@ internal class CatalogFragment : MvpAppCompatFragment(R.layout.fragment_catalog)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        with(binding) {
-            rvCategories.layoutManager = LinearLayoutManager(requireContext())
-            rvCategories.itemAnimator = null
-            rvCategories.adapter = easyAdapter
-        }
+        addHeatMapChart()
     }
 
     override fun onDefinedCategoryListEvent(event: LoadingListEvent<Unit>) {
@@ -167,7 +162,7 @@ internal class CatalogFragment : MvpAppCompatFragment(R.layout.fragment_catalog)
         riskMap.data(data)
 
 
-//        binding.anyChartRadar.setChart(riskMap)
+        binding.anyChartRadar.setChart(riskMap)
     }
 
     companion object {

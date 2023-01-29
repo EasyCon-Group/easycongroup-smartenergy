@@ -41,6 +41,11 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <com.anychart.AnyChartView
+                android:id="@+id/any_chart_polar"
+                android:layout_width="match_parent"
+                android:layout_height="420dp" />
+
             <LinearLayout
                 android:id="@+id/ll_citizen"
                 android:layout_width="match_parent"
@@ -112,18 +117,6 @@
 
 
             </LinearLayout>
-
-            <com.anychart.AnyChartView
-                android:id="@+id/any_chart_polar"
-                android:background="#D32525"
-                android:layout_width="match_parent"
-                android:layout_height="420dp" />
-
-<!--            <com.anychart.AnyChartView-->
-<!--                android:id="@+id/any_chart_radar"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:background="#973B3B"-->
-<!--                android:layout_height="420dp" />-->
 
         </LinearLayout>
 
