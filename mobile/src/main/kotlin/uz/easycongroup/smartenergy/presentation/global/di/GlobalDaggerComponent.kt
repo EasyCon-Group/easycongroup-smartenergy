@@ -13,6 +13,9 @@ import uz.easycongroup.smartenergy.presentation.presentation.features.main.featu
 import uz.easycongroup.smartenergy.presentation.presentation.features.main.router.MainRouter
 import uz.easycongroup.smartenergy.presentation.presentation.features.notification.list.NotificationListFragment
 import uz.easycongroup.smartenergy.presentation.presentation.features.payment.history.PaymentHistoryFragment
+import uz.easycongroup.smartenergy.presentation.presentation.features.act.submit.ActSubmitFragment
+import uz.easycongroup.smartenergy.presentation.presentation.common.features.acttype.ActTypeFragment
+import uz.easycongroup.smartenergy.presentation.presentation.common.features.photoaction.PhotoActionFragment
 
 @GlobalScope
 @Subcomponent(
@@ -30,13 +33,22 @@ internal interface GlobalDaggerComponent {
 
     fun inject(activity: GlobalActivity)
 
+    fun inject(fragment: ActSubmitFragment)
+    fun inject(fragment: ActTypeFragment)
     fun inject(fragment: AuthStartFragment)
+
     fun inject(fragment: CatalogFragment)
+
     fun inject(fragment: DatePickerFragment)
+
     fun inject(fragment: HomeFragment)
+
     fun inject(fragment: NotificationListFragment)
+
+    fun inject(fragment: PhotoActionFragment)
     fun inject(fragment: PaymentHistoryFragment)
     fun inject(fragment: ProfileFragment)
+
     fun inject(fragment: SortTypeFragment)
 
     @Subcomponent.Factory

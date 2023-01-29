@@ -78,4 +78,28 @@
     <string name="user_role_supervisor">Nazoratchi</string>
     <string name="user_role_citizen">Xonadon sohibi</string>
 
+    <string name="act_type_set_counter">Xisoblagich o\’rnatish</string>
+    <string name="ac_type_replace_counter">Xisoblagichni almashtirish</string>
+    <string name="act_type_illegal_usage">Noqoquniy foydalanish</string>
+
+    <string name="act_type">Akt turi</string>
+
+    <!-- act submit screen -->
+    <string name="act_submit_title">Akt yuborish</string>
+    <string name="act_submit_submit">Yuborish</string>
+    <string name="act_submit_act_type_hint">Akt turini tanlang</string>
+    <string name="act_submit_name_hint">Sarlavha</string>
+    <string name="act_submit_name_label">Sarlavha</string>
+    <string name="act_submit_desc_hint">Izoh</string>
+    <string name="act_submit_desc_label">Izoh</string>
+    <string name="act_submit_error_act_type_not_selected">Akt turi tanlanmagan</string>
+
+    <string name="input_error_empty">Bu maydon bo’sh bo’lishi mumkin emas</string>
+    <string name="photo_limit_message_warning">4 tagacha rasm qo\'shishingiz mumkin</string>
+
+    <!-- photo action screen -->
+    <string name="photo_action_title">Rasm qo\'shish</string>
+    <string name="photo_action_from_gallery">Galereyadan tanlash </string>
+    <string name="photo_action_from_camery">Rasmga olish </string>
+
 </resources>

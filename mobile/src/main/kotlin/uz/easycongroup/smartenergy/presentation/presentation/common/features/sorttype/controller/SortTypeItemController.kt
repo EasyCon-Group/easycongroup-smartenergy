@@ -8,7 +8,7 @@ import uz.easycongroup.smartenergy.R
 import uz.easycongroup.smartenergy.core.data.models.selectable.SelectionItem
 import uz.easycongroup.smartenergy.databinding.ViewHolderSortTypeBinding
 import uz.easycongroup.smartenergy.domain.data.models.sort.SortType
-import uz.easycongroup.smartenergy.presentation.utils.enumexts.nameResId
+import uz.easycongroup.smartenergy.presentation.utils.nameResId
 import uz.easycongroup.smartenergy.presentation.utils.setThrottledClickListener
 
 class SortTypeItemController(

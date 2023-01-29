@@ -36,7 +36,7 @@ internal class HomeFragment : MvpAppCompatFragment(R.layout.fragment_home), Home
         super.onViewCreated(view, savedInstanceState)
 
         with(binding) {
-
+            btnSubmitReport.setOnClickListener { presenter.openActSubmitScreen() }
         }
     }
 

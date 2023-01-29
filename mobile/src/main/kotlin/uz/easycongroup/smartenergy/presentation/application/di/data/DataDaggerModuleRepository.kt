@@ -2,12 +2,14 @@ package uz.easycongroup.smartenergy.presentation.application.di.data
 
 import dagger.Binds
 import dagger.Module
+import uz.easycongroup.smartenergy.data.repository.act.ActRepositoryImpl
 import uz.easycongroup.smartenergy.data.repository.auth.AuthRepositoryImpl
 import uz.easycongroup.smartenergy.data.repository.common.CommonTypesRepositoryImpl
 import uz.easycongroup.smartenergy.data.repository.notification.NotificationRepositoryImpl
 import uz.easycongroup.smartenergy.data.repository.payment.PaymentRepositoryImpl
 import uz.easycongroup.smartenergy.data.repository.state.StateRepositoryImpl
 import uz.easycongroup.smartenergy.data.repository.user.UserRepositoryImpl
+import uz.easycongroup.smartenergy.domain.data.repository.act.ActRepository
 import uz.easycongroup.smartenergy.domain.data.repository.auth.AuthRepository
 import uz.easycongroup.smartenergy.domain.data.repository.common.CommonTypesRepository
 import uz.easycongroup.smartenergy.domain.data.repository.notification.NotificationRepository
@@ -20,6 +22,12 @@ internal object DataDaggerModuleRepository {
 
     @Module
     interface Binders {
+
+        @Binds
+        fun bindActRepository(
+            impl: ActRepositoryImpl
+        ): ActRepository
+
 
         @Binds
         fun bindAuthRepository(

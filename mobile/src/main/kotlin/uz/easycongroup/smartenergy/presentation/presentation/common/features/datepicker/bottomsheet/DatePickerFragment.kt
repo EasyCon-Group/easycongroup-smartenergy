@@ -12,14 +12,14 @@ import uz.easycongroup.smartenergy.presentation.global.GlobalActivity
 import uz.easycongroup.smartenergy.presentation.support.cicerone.utils.getNonNullBundleArgument
 import uz.easycongroup.smartenergy.presentation.support.cicerone.utils.getNullableBundleArgument
 import uz.easycongroup.smartenergy.presentation.support.cicerone.utils.withArguments
-import uz.easycongroup.smartenergy.presentation.support.moxy.BaseMvpBottomSheetDialogFragment
+import uz.easycongroup.smartenergy.presentation.support.moxy.BaseBottomSheetDialogFragment
 import java.util.*
 import java.util.Calendar.YEAR
 import java.util.Calendar.MONTH
 import java.util.Calendar.DAY_OF_MONTH
 import javax.inject.Inject
 
-internal class DatePickerFragment : BaseMvpBottomSheetDialogFragment(), DatePickerView {
+internal class DatePickerFragment : BaseBottomSheetDialogFragment(), DatePickerView {
 
     @Inject
     @InjectPresenter

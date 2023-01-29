@@ -1,5 +1,6 @@
 package uz.easycongroup.smartenergy.presentation.global.router
 
+import uz.easycongroup.smartenergy.domain.data.models.act.type.ActType
 import uz.easycongroup.smartenergy.domain.data.models.sort.SortType
 import uz.easycongroup.smartenergy.presentation.global.router.screens.GlobalBottomSheets
 import uz.easycongroup.smartenergy.presentation.global.router.screens.GlobalFragments
@@ -7,6 +8,9 @@ import uz.easycongroup.smartenergy.presentation.presentation.features.main.route
 import uz.easycongroup.smartenergy.presentation.support.cicerone.router.CiceroneRouter
 
 class GlobalRouter : CiceroneRouter() {
+
+    fun openActSubmitScreen() =
+        navigateTo(GlobalFragments.ActSubmitScreen)
 
     fun openAuthStartScreen(isAsRootScreen: Boolean = false) {
         if (isAsRootScreen) newRootScreen(GlobalFragments.AuthStartScreen)
@@ -26,8 +30,8 @@ class GlobalRouter : CiceroneRouter() {
      * bottom sheets
      * */
 
-    fun openSortTypeScreen(sortType: SortType?) =
-        navigateTo(GlobalBottomSheets.SortTypeScreen(sortType))
+    fun openActTypeScreen(actType: ActType?) =
+        navigateTo(GlobalBottomSheets.ActTypeScreen(actType))
 
     fun openDatePickerScreen(
         dialogTitle: String? = null,
@@ -45,4 +49,10 @@ class GlobalRouter : CiceroneRouter() {
                 hideDaySpinner = hideDaySpinner
             )
         )
+
+    fun openSortTypeScreen(sortType: SortType?) =
+        navigateTo(GlobalBottomSheets.SortTypeScreen(sortType))
+
+    fun openPhotoActionSelectionScreen() =
+        navigateTo(GlobalBottomSheets.PhotoActionScreen)
 }

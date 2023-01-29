@@ -32,7 +32,6 @@
     <color name="color_product_background">#FFFFFF</color>
     <color name="color_product_stroke">#E8EAEE</color>
     <color name="color_shimmer_element">#DDDCDC</color>
-    <color name="color_plus_minus_button">#E8EAEE</color>
     <color name="color_viewed_count">#F4F5F8</color>
 
     <!-- text colors -->

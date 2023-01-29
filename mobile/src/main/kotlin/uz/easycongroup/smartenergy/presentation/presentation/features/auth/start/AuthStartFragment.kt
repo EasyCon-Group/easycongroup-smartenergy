@@ -22,11 +22,11 @@ import uz.easycongroup.smartenergy.presentation.presentation.features.auth.start
 import uz.easycongroup.smartenergy.presentation.presentation.features.auth.start.controller.UserItemController
 import uz.easycongroup.smartenergy.presentation.support.backpresseddispatcher.addCallback
 import uz.easycongroup.smartenergy.presentation.support.cicerone.utils.withArguments
-import uz.easycongroup.smartenergy.presentation.support.moxy.BaseMvpAppFragment
+import uz.easycongroup.smartenergy.presentation.support.moxy.BaseMvpFragment
 import uz.easycongroup.smartenergy.presentation.utils.onBackPressedDispatcher
 import javax.inject.Inject
 
-internal class AuthStartFragment : BaseMvpAppFragment(R.layout.fragment_auth_start),
+internal class AuthStartFragment : BaseMvpFragment(R.layout.fragment_auth_start),
     AuthStartView {
 
     @Inject

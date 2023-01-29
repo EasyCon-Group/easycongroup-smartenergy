@@ -10,4 +10,7 @@ class HomeRouter @Inject constructor(
 
     fun openNotificationListScreen() =
         globalRouter.openNotificationListScreen()
+
+    fun openActSubmitScreen() =
+        globalRouter.openActSubmitScreen()
 }

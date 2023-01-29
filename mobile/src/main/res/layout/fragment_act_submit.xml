@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:inputfield="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_primary">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarLayout.Default"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:popupTheme="@style/AppTheme.Toolbar.Default"
+            app:title="@string/act_submit_title"
+            app:titleCentered="true" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="20dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="90dp"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="12dp"
+                tools:itemCount="4"
+                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/view_holder_photo"
+                tools:orientation="horizontal" />
+
+            <uz.easycongroup.smartenergy.core.presentation.customview.inputview.InputFieldView
+                android:id="@+id/ifv_act_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:hint="@string/act_submit_act_type_hint"
+                android:imeOptions="actionNext"
+                android:inputType="textAutoComplete"
+                inputfield:boxBackgroundColor="@color/color_input_background_light"
+                inputfield:endIconDrawable="@drawable/ic_field_end_icon"
+                inputfield:endIconMode="custom"
+                inputfield:labelText="@string/act_type" />
+
+            <uz.easycongroup.smartenergy.core.presentation.customview.inputview.InputFieldView
+                android:id="@+id/ifv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/act_submit_name_hint"
+                android:imeOptions="actionNext"
+                android:inputType="textAutoComplete"
+                inputfield:boxBackgroundColor="@color/color_input_background_light"
+                inputfield:labelText="@string/act_submit_name_label" />
+
+            <uz.easycongroup.smartenergy.core.presentation.customview.inputview.InputFieldView
+                android:id="@+id/ifv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="2dp"
+                android:hint="@string/act_submit_desc_hint"
+                android:imeOptions="actionNone"
+                android:inputType="textMultiLine|textImeMultiLine|textAutoComplete|textAutoCorrect"
+                android:minLines="5"
+                inputfield:boxBackgroundColor="@color/color_input_background_light"
+                inputfield:labelText="@string/act_submit_desc_label" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_publish"
+                style="@style/AppTheme.MaterialButton.Default"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/act_submit_submit"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

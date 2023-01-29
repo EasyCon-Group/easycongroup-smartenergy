@@ -4,7 +4,7 @@ import androidx.annotation.LayoutRes
 import moxy.MvpAppCompatFragment
 import uz.easycongroup.smartenergy.presentation.presentation.common.features.progressdialog.ProgressDialogFragment
 
-internal abstract class BaseMvpAppFragment(
+internal abstract class BaseMvpFragment(
     @LayoutRes contentLayoutId: Int
 ) : MvpAppCompatFragment(contentLayoutId) {
 

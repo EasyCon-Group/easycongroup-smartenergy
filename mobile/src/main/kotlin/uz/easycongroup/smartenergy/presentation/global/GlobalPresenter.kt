@@ -12,7 +12,7 @@ class GlobalPresenter @Inject constructor(
 
     override fun onFirstViewAttach() {
         when {
-            !stateUseCase.isLoginHasBeen() -> router.openAuthStartScreen(true)
+//            !stateUseCase.isLoginHasBeen() -> router.openAuthStartScreen(true)
             else -> router.openMainScreen()
         }
     }

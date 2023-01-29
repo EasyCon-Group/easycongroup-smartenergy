@@ -17,11 +17,11 @@ import uz.easycongroup.smartenergy.presentation.presentation.common.features.sor
 import uz.easycongroup.smartenergy.presentation.support.backpresseddispatcher.addCallback
 import uz.easycongroup.smartenergy.presentation.support.cicerone.utils.getNullableBundleArgument
 import uz.easycongroup.smartenergy.presentation.support.cicerone.utils.withArguments
-import uz.easycongroup.smartenergy.presentation.support.moxy.BaseMvpBottomSheetDialogFragment
+import uz.easycongroup.smartenergy.presentation.support.moxy.BaseBottomSheetDialogFragment
 import uz.easycongroup.smartenergy.presentation.utils.onBackPressedDispatcher
 import javax.inject.Inject
 
-internal class SortTypeFragment : BaseMvpBottomSheetDialogFragment(), SortTypeView {
+internal class SortTypeFragment : BaseBottomSheetDialogFragment(), SortTypeView {
 
     @Inject
     @InjectPresenter

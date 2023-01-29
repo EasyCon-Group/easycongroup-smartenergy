@@ -2,17 +2,20 @@ package uz.easycongroup.smartenergy.presentation.global.router.screens
 
 import androidx.fragment.app.Fragment
 import ru.terrakok.cicerone.android.support.SupportAppScreen
+import uz.easycongroup.smartenergy.domain.data.models.act.type.ActType
 import uz.easycongroup.smartenergy.domain.data.models.sort.SortType
+import uz.easycongroup.smartenergy.presentation.presentation.common.features.acttype.ActTypeFragment
 import uz.easycongroup.smartenergy.presentation.presentation.common.features.datepicker.bottomsheet.DatePickerFragment
+import uz.easycongroup.smartenergy.presentation.presentation.common.features.photoaction.PhotoActionFragment
 import uz.easycongroup.smartenergy.presentation.presentation.common.features.sorttype.SortTypeFragment
 
 object GlobalBottomSheets {
 
-    data class SortTypeScreen(
-        private val sortType: SortType?
+    data class ActTypeScreen(
+        private val actType: ActType?
     ) : SupportAppScreen() {
         override fun getFragment(): Fragment =
-            SortTypeFragment.newInstance(sortType)
+            ActTypeFragment.newInstance(actType)
     }
 
     data class DatePickerScreen(
@@ -30,5 +33,17 @@ object GlobalBottomSheets {
                 maxDate = maxDate,
                 hideDaySpinner = hideDaySpinner
             )
+    }
+
+    object PhotoActionScreen : SupportAppScreen() {
+        override fun getFragment(): Fragment =
+            PhotoActionFragment.newInstance()
+    }
+
+    data class SortTypeScreen(
+        private val sortType: SortType?
+    ) : SupportAppScreen() {
+        override fun getFragment(): Fragment =
+            SortTypeFragment.newInstance(sortType)
     }
 }

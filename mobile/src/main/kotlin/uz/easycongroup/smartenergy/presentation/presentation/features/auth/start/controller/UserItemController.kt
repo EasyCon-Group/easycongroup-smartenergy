@@ -6,7 +6,7 @@ import ru.surfstudio.android.easyadapter.holder.BindableViewHolder
 import uz.easycongroup.smartenergy.R
 import uz.easycongroup.smartenergy.databinding.ViewHolderUserBinding
 import uz.easycongroup.smartenergy.domain.data.models.user.User
-import uz.easycongroup.smartenergy.presentation.utils.enumexts.nameResId
+import uz.easycongroup.smartenergy.presentation.utils.nameResId
 
 internal class UserItemController(
     private val onItemClicked: (User) -> Unit

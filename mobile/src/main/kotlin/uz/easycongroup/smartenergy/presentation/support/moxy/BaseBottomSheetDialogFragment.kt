@@ -10,7 +10,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import moxy.MvpBottomSheetDialogFragment
 
-abstract class BaseMvpBottomSheetDialogFragment : MvpBottomSheetDialogFragment() {
+abstract class BaseBottomSheetDialogFragment : MvpBottomSheetDialogFragment() {
 
     open fun isCanFitToContents(): Boolean = true
     open fun isRequiredSetForcedFullScreen(): Boolean = false
@@ -20,7 +20,7 @@ abstract class BaseMvpBottomSheetDialogFragment : MvpBottomSheetDialogFragment()
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return super.onCreateDialog(savedInstanceState).apply {
             setOnShowListener {
-                (this@BaseMvpBottomSheetDialogFragment.dialog as BottomSheetDialog)
+                (this@BaseBottomSheetDialogFragment.dialog as BottomSheetDialog)
                     .behavior.apply {
                         isFitToContents = isCanFitToContents()
                         setState(getInitialState())

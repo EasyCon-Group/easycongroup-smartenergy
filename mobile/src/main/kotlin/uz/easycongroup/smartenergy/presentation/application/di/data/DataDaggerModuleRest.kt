@@ -24,6 +24,7 @@ import uz.easycongroup.smartenergy.data.datasource.rest.interceptor.logging.Http
 import uz.easycongroup.smartenergy.data.datasource.rest.retrofit.adapter.FlowCallAdapterFactory
 import uz.easycongroup.smartenergy.data.datasource.rest.retrofit.converter.UnitConverterFactory
 import uz.easycongroup.smartenergy.data.datasource.rest.retrofit.interceptor.withHttpErrorDispatcher
+import uz.easycongroup.smartenergy.data.datasource.rest.service.ActRestService
 import uz.easycongroup.smartenergy.data.datasource.rest.service.AuthRestService
 import uz.easycongroup.smartenergy.data.datasource.rest.service.PaymentRestService
 import uz.easycongroup.smartenergy.data.datasource.rest.service.ProfileRestService
@@ -48,6 +49,13 @@ internal object DataDaggerModuleRest {
 
     @Module
     object RestServiceProviders {
+
+        @JvmStatic
+        @Provides
+        @Singleton
+        fun provideActRestService(
+            @DefaultRest retrofit: Retrofit
+        ): ActRestService = retrofit.create()
 
         @JvmStatic
         @Provides

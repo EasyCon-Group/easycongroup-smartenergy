@@ -19,13 +19,18 @@ class HomePresenter @Inject constructor(
 ) : MvpPresenter<HomeView>() {
 
     override fun onFirstViewAttach() {
+        setViewVisibility()
+    }
+
+    private fun setViewVisibility(){
         val userRole = userUseCase.getSavedUserRole()
         viewState.onDefinedViewVisibility(
             isManagerViewsVisible = userRole.isManager,
-            isSupervisorViewsVisible = userRole.isSupervisor,
+            isSupervisorViewsVisible = true, // userRole.isSupervisor, fixme
             isCitizenViewsVisible = userRole.isCitizen
         )
     }
 
-
+    fun openActSubmitScreen() =
+        router.openActSubmitScreen()
 }

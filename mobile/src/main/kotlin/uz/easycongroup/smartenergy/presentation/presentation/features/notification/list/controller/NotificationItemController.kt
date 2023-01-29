@@ -6,7 +6,7 @@ import ru.surfstudio.android.easyadapter.holder.BindableViewHolder
 import uz.easycongroup.smartenergy.R
 import uz.easycongroup.smartenergy.databinding.ViewHolderNotificationBinding
 import uz.easycongroup.smartenergy.domain.data.models.notification.Notification
-import uz.easycongroup.smartenergy.presentation.utils.fresco.setimageUrlOrId
+import uz.easycongroup.smartenergy.presentation.utils.fresco.setImageUrlOrId
 
 internal class NotificationItemController(
     private val onClicked: (notification: Notification) -> Unit,
@@ -31,7 +31,7 @@ internal class NotificationItemController(
         override fun bind(data: Notification) {
             selectedItem = data
             with(binding) {
-                sdvNotificationState.setimageUrlOrId(data.image)
+                sdvNotificationState.setImageUrlOrId(data.image)
                 tvNotificationMessage.text = data.message
                 tvNotificationDate.text = data.date
             }

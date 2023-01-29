@@ -2,6 +2,12 @@ package uz.easycongroup.smartenergy.presentation.application.di.domain
 
 import dagger.Binds
 import dagger.Module
+import uz.easycongroup.smartenergy.domain.usecase.act.ActSubmitUseCase
+import uz.easycongroup.smartenergy.domain.usecase.act.ActSubmitUseCaseImpl
+import uz.easycongroup.smartenergy.domain.usecase.common.acttype.ActTypeUseCase
+import uz.easycongroup.smartenergy.domain.usecase.common.acttype.ActTypeUseCaseImpl
+import uz.easycongroup.smartenergy.domain.usecase.common.photoaction.PhotoActionUseCase
+import uz.easycongroup.smartenergy.domain.usecase.common.photoaction.PhotoActionUseCaseImpl
 import uz.easycongroup.smartenergy.domain.usecase.common.sorttype.SortTypeUseCase
 import uz.easycongroup.smartenergy.domain.usecase.common.sorttype.SortTypeUseCaseImpl
 import uz.easycongroup.smartenergy.domain.usecase.datepicker.DatePickerUseCase
@@ -33,6 +39,16 @@ internal object DomainDaggerModuleUseCase {
     interface Binders {
 
         @Binds
+        fun bindActSubmitUseCase(
+            impl: ActSubmitUseCaseImpl
+        ): ActSubmitUseCase
+
+        @Binds
+        fun bindActTypeUseCase(
+            impl: ActTypeUseCaseImpl
+        ): ActTypeUseCase
+
+        @Binds
         fun bindDatePickerUseCase(
             impl: DatePickerUseCaseImpl
         ): DatePickerUseCase
@@ -56,6 +72,11 @@ internal object DomainDaggerModuleUseCase {
         fun bindOrderListUseCase(
             impl: PaymentHistoryUseCaseImpl
         ): PaymentHistoryUseCase
+
+        @Binds
+        fun bindPhotoActionUseCase(
+            impl: PhotoActionUseCaseImpl
+        ): PhotoActionUseCase
 
         @Binds
         fun bindProfileUseCase(

@@ -37,4 +37,21 @@
 
     </declare-styleable>
 
+    <declare-styleable name="InputFieldView">
+        <attr name="endIconDrawable" />
+        <attr name="endIconMode" />
+        <attr name="android:imeOptions" />
+        <attr name="android:inputType" />
+        <attr name="labelText" format="string|reference" />
+        <attr name="postfixText" format="string|reference" />
+        <attr name="postfixTextColor" format="reference|color" />
+        <attr name="boxBackgroundColor" />
+        <attr name="postfixPadding" format="reference|dimension" />
+        <attr name="android:hint" />
+        <attr name="android:gravity" />
+        <attr name="helperText" />
+        <attr name="android:minLines" />
+        <attr name="android:maxLines" />
+    </declare-styleable>
+
 </resources>

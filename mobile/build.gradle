@@ -30,6 +30,8 @@ android {
         }
 
         buildConfigField "long", "BUILD_DATE", System.currentTimeMillis() + "L"
+        buildConfigField "String", "FILE_PROVIDER", "\"uz.easycongroup.smartenergy.provider\""
+
         archivesBaseName = "v${versionName}(${versionCode})-${applicationId}"
     }
 
@@ -85,6 +87,8 @@ dependencies {
     implementation "androidx.appcompat:appcompat:1.4.1"
     implementation "androidx.core:core-ktx:1.9.0-alpha02"
     implementation "androidx.constraintlayout:constraintlayout:2.1.0"
+
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
 
     implementation "com.google.android.material:material:1.4.0"
 
